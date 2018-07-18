@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_back_press"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <CheckedTextView
+                android:id="@+id/rchg_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/down"
+                android:checked="true"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/Recharge"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/rechargetype"
+                android:visibility="visible" />
+
+            <CheckedTextView
+                android:id="@+id/pstpd_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/down"
+                android:checked="true"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/postpaid"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pstpd_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pstrch_txv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/presseffectblue"
+                    android:drawableLeft="@android:drawable/ic_menu_call"
+
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/mobile"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/pst_dtc_rch_txv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/presseffectblue"
+                    android:drawableLeft="@android:drawable/ic_menu_call"
+
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/datacard"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <CheckedTextView
+                android:id="@+id/bill_pay_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/down"
+                android:checked="true"
+                android:drawableLeft="@drawable/bill_pay"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/bill_pymt"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/bill_pmt_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eltc_rch_txv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/presseffectblue"
+                    android:drawableLeft="@drawable/electricity"
+
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/electricity"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/gas_rch_txv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/presseffectblue"
+                    android:drawableLeft="@drawable/gas"
+
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/gas"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/ins_rch_txv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/presseffectblue"
+                    android:drawableLeft="@drawable/insurance"
+
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/insurance"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <CheckedTextView
+                android:id="@+id/rchg_hist__ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:checked="true"
+                android:drawableLeft="@drawable/history"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/Recharge_history"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <CheckedTextView
+                android:id="@+id/upt_pmt_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:checked="true"
+                android:drawableLeft="@drawable/update_payment"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/update_payment"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/pmt_hist__ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:checked="true"
+                android:drawableLeft="@drawable/history"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/payments_history"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/mnyrmt_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/balance"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/money_remitance"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+            <CheckedTextView
+                android:id="@+id/rmt_hist__ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/history"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/remt_history"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <CheckedTextView
+                android:id="@+id/bill_summ_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/history"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/biil_summary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/prof__ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/profile"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/profile"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/v_dspt__ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/down"
+                android:drawableLeft="@android:drawable/ic_menu_save"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/view_dispute"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <CheckedTextView
+                android:id="@+id/bal__ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/balance"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/balance"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/r_disp__ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/dispute"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/raise_dispute"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/pwd_chg_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/pwd"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/change_pwd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/ifsc_code_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/ifsc_code_finder"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckedTextView
+                android:id="@+id/spt_cent_ctv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_bluepresseffect"
+                android:checkMark="@drawable/right"
+                android:drawableLeft="@drawable/support"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/support_center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
